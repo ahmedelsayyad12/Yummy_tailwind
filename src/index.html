@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Yummy</title>
+</head>
+
+<body class="bg-white text-black overflow-hidden box-border">
+    <div class="loadingScreen fixed top-0 left-0 right-0 bottom-0  flex bg-black justify-center items-center z-40">
+        <div
+            class="loader w-16 aspect-square rounded-full border-8 border-solid border-blue-400 border-r-orange-500 animate-spin">
+        </div>
+    </div>
+    <div class="sideBar min-h-screen fixed top-0 flex z-50">
+        <div
+            class="navTabs flex flex-col justify-between min-h-screen p-4 bg-gradient-to-b from-orange-500 to-red-800 text-white text-lg font-semibold">
+            <div class="links">
+                <ul class="list-none overflow-hidden">
+                    <li class="py-2 relative cursor-pointer search">Search</li>
+                    <li class="py-2 relative cursor-pointer categories">Categories</li>
+                    <li class="py-2 relative cursor-pointer area">Area</li>
+                    <li class="py-2 relative cursor-pointer ingredients">Ingredients</li>
+                    <li class="py-2 relative cursor-pointer contactUs">Contact Us</li>
+                </ul>
+            </div>
+            <div class="barFooter">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook cursor-pointer"></i>
+                    <i class="fa-brands fa-twitter cursor-pointer"></i>
+                    <i class="fa-solid fa-globe cursor-pointer"></i>
+                </div>
+                <div class="footer">
+                    <p>"Copyright Â© 2019 All Rights "
+                        <br>
+                        "Reserved."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="navHeader text-white flex flex-col justify-between py-4 text-center px-2 bg-[red]">
+            <img src="images/logo.png" class="logo cursor-pointer w-14" alt="">
+            <i class="fa-solid fa-align-justify text-3xl cursor-pointer navBtn"></i>
+            <div>
+                <i class="fa-solid fa-globe block cursor-pointer"></i>
+                <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container w-5/6 mx-auto" id="searchContainer"></div>
+
+
+    <!-- <div class="innerLoading fixed top-0 left-0 right-0 bottom-0  flex bg-black justify-center items-center z-40">
+        <div
+            class="loader w-16 aspect-square rounded-full border-8 border-solid border-blue-400 border-r-orange-500 animate-spin">
+        </div>
+    </div>
+
+
+    <div class="container w-5/6 mx-auto">
+        <div class="w-full flex flex-wrap py-10  text-2xl font-semibold text-black" id="rowData">
+
+        </div>
+    </div> -->
+
+    <div class="min-h-screen relative">
+        <div
+            class="innerLoading absolute top-0 left-0 right-0 bottom-0  flex bg-white justify-center items-center z-40">
+            <i class="loader w-16 aspect-square rounded-full border-8 border-solid border-blue-400 border-r-orange-500 animate-spin"></i>
+        </div>
+
+
+        <div class="container w-5/6 mx-auto">
+            <div class="w-full flex flex-wrap py-10  text-2xl font-semibold text-black" id="rowData">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
